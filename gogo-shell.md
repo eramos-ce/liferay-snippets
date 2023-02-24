@@ -9,3 +9,4 @@
 5. `lb <text>` - Lists all bundles on your deployment whose name matches the input text.  Think grep.
 6. `bundle <bundle id>` - Prints many details about a given bundle.  Important to note here are the list of referenced services as well as the list of provided services. If you expect a service to be provided but it's not on the list, there's almost certainly an issue wiring all of it's dependencies.
 7. `scr:list` & `scr:info` - Prints all services and components that have been correctly wired.
+8. `inspect capability service [BUNDLE_ID]` - Lists all services provided by a bundle with the provided bundle id.
