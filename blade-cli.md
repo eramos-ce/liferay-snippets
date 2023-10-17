@@ -6,7 +6,7 @@ Common blade CLI commands.
 
 1. Create a new Liferay workspace
     ```
-    blade init -v 7.3 --product dxp liferay-workspace
+    blade init --liferay-product dxp --liferay-version dxp-7.4-u86 .
     ```
 
 2. Create a new Liferay mvc portlet
