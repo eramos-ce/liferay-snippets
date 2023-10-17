@@ -21,7 +21,7 @@ Common blade CLI commands.
 
 4. Create a working sample module from Liferay samples.
     ```
-    blade sample -v 7.3 auto-login
+    blade sample -v 7.4 auto-login
     ```
     
 5. Create a module from blade templates
@@ -29,3 +29,7 @@ Common blade CLI commands.
         ```
         blade create -t service -s com.liferay.portal.kernel.security.auto.login.AutoLogin -p com.linelio.liferay.autologin -c MyAutoLogin autologin
         ```
+    - Create new Service Builder service
+        ```
+         blade create -t service-builder -v 7.4 -c MyService -p com.teamibr.liferay.support.myservice myservice
+        ``` 
