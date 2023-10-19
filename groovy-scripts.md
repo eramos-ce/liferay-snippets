@@ -59,3 +59,14 @@ try {
   out.println(e);
 }
 ```
+
+## Update all users to set their email validation flag to true
+
+```
+users = com.liferay.portal.kernel.service.UserLocalServiceUtil.getUsers(-1, -1)
+for( user in users) {
+  user.setEmailAddressVerified(true)
+  updatedUser = com.liferay.portal.kernel.service.UserLocalServiceUtil.updateUser(user)
+  out.println(updatedUser);
+}
+```
